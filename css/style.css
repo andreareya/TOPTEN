@@ -2,37 +2,98 @@
 
 body {
     margin: 100px;
-	font-family: "montserrat";
-	
+	font-family: "montserrat";	
 }
 
-.menu {
-width:750px;
-margin:0 auto	
+header {
+	display: inline-block;
+	height: 100px;
+	width: 100%;
 }
+
+	
 .menu ul {
  font-family: "montserrat";
  list-style-type:none;
+	letter-spacing: 2pt;
  }
 .menu li {
+	display: inline-block;
  float:left;
  padding:5px;
  text-align:center;
+vertical-align: top;
+	    margin-top: 25px;
+    margin-left: 40px;
  }
 .menu a {
  display:block;
  width:100px;
  color:#C91480;
+ float:left;	
  }
 
 .logo {
- 	float:left;   
-	width:80px;
-	height:80px;
+	vertical-align: top;
+	width:100px;
+	height:100px;
+	display: inline-block;
+	float: left;
+}
+
+
+#top {
+	float: none;
+	border-radius: 2pt;
+	background-color: #C91480;
+	text-align: center;
+	color: white;
+	margin-bottom: 10px;
+	height: 600px;
+	width: 100%;
+	
+}
+
+
+img#one {
+	border-radius: 2pt;
+	color: #C91480;
+	position: relative;
+	display: block;
+}
+
+
+
+.topfive {
+	border-radius: 2pt;
+	background-color: #C91480;
+	text-align: center;
+	color: white;
+	padding: 30px;
+    width: 340px;
+    height: 200px;
+    margin: 10px;
+	float: left;
+	
+}
+
+.top {
+	border-radius: 2pt;
+	background-color: #C91480;
+	padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+	text-align: center;
+}
+
+
+.lecteur {
+	margin-top: 20px;
+	margin-bottom: 20px;
+		
 }
 
 h3.titre {
-	
  	font-family: "montserrat";
 	color: #C91480;
 	margin-top: 30px;
@@ -47,6 +108,7 @@ input{
 
 form{
 padding: 0;
+float: right;	
 }
 /* Expandable search box */
 /* Note: don't change 0.8s in transition. */
@@ -101,6 +163,11 @@ input.search-text::-webkit-search-cancel-button {
 	cursor:pointer;
 }
 
+
+.row {
+	margin-left: 0;
+}
+
 .genres{
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -111,39 +178,28 @@ input.search-text::-webkit-search-cancel-button {
 .vertical {
 	border-radius: 2pt;
 	background-color: #C91480;
-	height:400px;
-	width: 300px;
-	margin-right: 10px;
+	height:300px;
+	width: 200px;
 	float: left;
+	margin: 10px;
 }
 
 .horizontal {
 	border-radius: 2pt;
 	background-color: #C91480;
-	height:195px;
-	width: 455px;
-	margin-bottom: 10px;
-    margin-right: 10px;
+	height:200px;
+	width: 300px;
 	float: left;
+	margin: 10px;
 }
 
-.grid h4 {
-	padding: 20px;
-	text-align: center
-}
 
-.grid #hiphop {
-	height: 20px;
-}
 
 footer {
-	padding-top: 100px;
-	background-color: #C91480;
 	border-radius: 2pt;
-	color: white;
+	color: #C91480;
 	text-align: center;
 	font-family: "montserrat";
-
 }
 
 .footer-top{
