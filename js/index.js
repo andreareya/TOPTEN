@@ -9,6 +9,8 @@ $(function(){
 	});
 });
 
+$('.block').smoove({offset:'40%'});
+
 $.getJSON("https://api.airtable.com/v0/app3oxEZXINZHN8ux/musics?api_key=keydQHDgERxfAsnDe",
                     function(data) {
 
