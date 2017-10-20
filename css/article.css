@@ -1,17 +1,21 @@
-@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400italic');
 
 body {
-    margin: 100px;
-	font-family: "montserrat";	
-}
-
-header {
-	display: inline-block;
-	height: 100px;
-	width: 100%;
-}
-
+  background: #C91480;
 	
+	
+}
+header {
+    display: inline-block;
+    height: 100px;
+    width: 1080px;
+	margin-bottom: 30px;
+		margin-left: 100px;
+	margin-right: 100px;
+}
+
 .menu ul {
  font-family: "montserrat";
  list-style-type:none;
@@ -39,66 +43,6 @@ vertical-align: top;
 	height:100px;
 	display: inline-block;
 	float: left;
-}
-
-
-#top {
-	float: none;
-	border-radius: 2pt;
-	background-color: #C91480;
-	text-align: center;
-	color: white;
-	margin-bottom: 10px;
-	height: 600px;
-	width: 100%;
-	
-}
-
-.top {
-	border-radius: 2pt;
-	background-color: #C91480;
-	padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-	text-align: center;
-}
-
-
-img#one {
-	border-radius: 2pt;
-	color: #C91480;
-	position: relative;
-	display: block;
-}
-
-img .five {
-	border-radius: 2pt;
-	color: #C91480;
-	position: relative;
-	display: block;
-}
-
-.topfive {
-	border-radius: 2pt;
-    width: 340px;
-    height: 200px;
-    margin: 10px;
-	float: left;
-	
-}
-
-
-.lecteur {
-	margin-top: 20px;
-	margin-bottom: 20px;
-		
-}
-
-h3.titre {
- 	font-family: "montserrat";
-	color: #C91480;
-	margin-top: 50px;
-
 }
 
 input{
@@ -163,141 +107,136 @@ input.search-text::-webkit-search-cancel-button {
 }
 
 
-.row {
-	margin-left: 0;
-}
-
-.genres{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	float: inherit;
-	color: white;
-}
-
-.wrap-card {
-  position: relative;
-  box-shadow: 0px 0px 0px #C91480;
-  transition: all 0.2s ease 0s;
-  -webkit-transform: translateY(0px) translateX(0px);
-  border-radius: 2pt;
-	height:300px;
-	width: 200px;
-	
-	margin: 10px;
-}
-.wrap-card:before,
-.wrap-card:after {
-  display: inline-block;
-  position: absolute;
-  content: " ";
-  width: 100%;
-  height: 3px;
-  background: #C91480;
-  -webkit-transform: scaleX(0);
-  transition: all 0.2s ease;
-}
-.wrap-card:before {
-  top: 0;
-  left: 0;
-  -webkit-transform-origin: 0 0;
-}
-.wrap-card:after {
-  bottom: 0;
-  left: 0;
-  -webkit-transform-origin: 100% 0;
-}
-.wrap-card:hover {
-  box-shadow: 20px 20px 0px #C91480;
-  -webkit-transform: translateY(-10px) translateX(-10px);
-  transition: all 0.2s ease 0.4s;
-}
-.wrap-card:hover:after,
-.wrap-card:hover:before {
-  -webkit-transform: scaleX(1);
-}
-
-.card h2 {
-	font-size: 18px;
-	letter-spacing: 2pt;
-}
-
-a.genre {
-	color: #C91480;
-	font-family: 'poppins';
-}
-
-.card#hip-hop {
-	background: #C91480;
-	background-image: url(../img/hiphop.jpg);
-	opacity: .7;
-}
-
-.card#hip-hop:hover {
-	opacity: .7;
-    transition: opacity .5s ease-out;
-    -moz-transition: opacity .5s ease-out;
-    -webkit-transition: opacity .5s ease-out;
-    -o-transition: opacity .5s ease-out;
-	
-}
-
-.card#pop {
-	background-image: url(../img/pop.jpg);
-}
-.card#country {
-	background-image: url(../img/country.jpg);
-}
-.card#rock {
-	background-image: url(../img/rock.jpg);
-}
-.card {
-  padding: 30px 35px 45px 35px;
-  margin-bottom: 30px;
-  border: 1px solid rgba(129, 129, 129, 0.1);
-  height:300px;
-	width: 200px;	
-}
-.card:before,
-.card:after {
-  display: inline-block;
-  position: absolute;
-  content: " ";
-  width: 3px;
+.header-photo{
+  width:100%;
   height: 100%;
-  background: #C91480;
-  -webkit-transform: scaleY(0);
-  transition: all 0.2s ease 0.2s;
-}
-.card:before {
-  top: 0;
-  left: 0;
-  -webkit-transform-origin: 0 100%;
+  position: relative;
+  text-align: center;
+  background:url("https://78.media.tumblr.com/9d9c31646261d92e921f58d63f7d76fd/tumblr_oy4b5sMAS31vg375eo1_1280.png");
+  background-size: cover;
+  background-position: 50% -50%;
 }
 
-.card h2 :before{
-  top: 0;
-  left: 0;
-  -webkit-transform-origin: 0 100%;
-	color: white;
+.container-text{
+  max-width: 80%;
+  width: 960px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 60px;
+ }
+.article{
+  position: absolute;
+  bottom: 120px;
+  z-index:2;
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.title{
+  font-size: 80px;
+  font-weight: 700;
+  position:relative;
+  color: white;
+}
+.subtitle{
+  font-weight: 300;
+  font-size: 26px;
+  padding-top: 10px;
+  color: white;
+}
+.intro{
+  font-style: italic;
+  font-weight: 400;
+  font-size:22px;
+  font-family: 'Monserrat', serif;
+	margin-top: 30px;
+	margin-bottom: 30px;	
+}
+.plain-text{
+  padding: 0px 70px;
+  text-align: left;
+  font-weight: 300;
 }
 
-.card h2 :after{
-  top: 0;
-  right: 0;
-  -webkit-transform-origin: 0 0;
-	color: #C91480;
+
+p {
+	font-family: "poppins";
 }
 
-.card:after {
-  top: 0;
-  right: 0;
-  -webkit-transform-origin: 0 0;
-}
-.card:hover:after,
-.card:hover:before {
-  -webkit-transform: scaleY(1);
+
+
+#lemonade {
+background-image: url('https://78.media.tumblr.com/20c116e7562056f722ef523928043df5/tumblr_o808t7L1nP1tldeyxo1_1280.jpg');
+width: 200px;
+height: 200px;
 }
 
+#beyonce{
+  background-image: url('https://78.media.tumblr.com/bf60219a71041d579b296f7e5556eb86/tumblr_n1ifqczoyG1tu668fo1_500.png');
+  width: 230px;
+  height: 230px;
+}
+
+#quatre{
+  background-image: url('http://hiphop-n-more.com/wp-content/uploads/2011/05/beyonce-4-deluxe.jpg');
+  width: 230px;
+  height: 230px;
+}
+
+#bday{
+  background-image: url('https://pbs.twimg.com/media/Cre0MtrUkAIaT0t.jpg');
+  width: 230px;
+  height: 230px;
+}
+
+
+section {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.overlay {
+  background: #eee linear-gradient(135deg, #C91480, #9b59b6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.blocks {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .block {
+      position: relative;
+      display: block;
+      width: 250px;
+      height: 200px;
+      margin: 20px;
+      transform: perspective(400px) rotateY(-35deg);
+      transition: transform .5s;
+}
+
+.overlay {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, .5);
+        opacity: 1;
+        transition: opacity .3s ease;
+        -webkit-transform:translate3d(0,0,0);
+      }
 
 footer {
 	margin-top: 50px;
@@ -305,6 +244,7 @@ footer {
 	text-align: center;
 	font-family: "montserrat";
 }
+
 
 .footer-top{
   width: 100%;
@@ -396,49 +336,4 @@ footer {
 }
 .instagram a:after{
   background: #cd486b;
-}
-
-.footer-bottom{
-  width: 100%;
-}
-
-
-span {
-	color: white;
-}
-.btn-secondary {
-	  display: block;
-	  margin: 40px auto 0px;
-    text-align: center;
-    background: #ed2553;
-    border-radius: 3px;
-    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
-    padding: 10px 17px;
-    font-size: 18px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    text-decoration: none;
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-}
-.btn-secondary:hover {
-	  transform: translateY(-3px);
-}
-.btn-secondary .fa {
-	  margin-right: 5px;
-}
-
-.animate-like {
-	animation-name: likeAnimation;
-	animation-iteration-count: 1;
-	animation-fill-mode: forwards;
-	animation-duration: 0.65s;
-}
-
-
-@keyframes likeAnimation {
-  0%   { transform: scale(30); }
-  100% { transform: scale(1); }
 }
