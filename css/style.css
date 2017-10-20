@@ -97,7 +97,7 @@ img .five {
 h3.titre {
  	font-family: "montserrat";
 	color: #C91480;
-	margin-top: 30px;
+	margin-top: 50px;
 
 }
 
@@ -174,28 +174,131 @@ input.search-text::-webkit-search-cancel-button {
 	color: white;
 }
 
-.vertical {
-	border-radius: 2pt;
-	background-color: #C91480;
+.wrap-card {
+  position: relative;
+  box-shadow: 0px 0px 0px #C91480;
+  transition: all 0.2s ease 0s;
+  -webkit-transform: translateY(0px) translateX(0px);
+  border-radius: 2pt;
 	height:300px;
 	width: 200px;
-	float: left;
+	
 	margin: 10px;
 }
-
-.horizontal {
-	border-radius: 2pt;
-	background-color: #C91480;
-	height:200px;
-	width: 300px;
-	float: left;
-	margin: 10px;
+.wrap-card:before,
+.wrap-card:after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 3px;
+  background: #C91480;
+  -webkit-transform: scaleX(0);
+  transition: all 0.2s ease;
+}
+.wrap-card:before {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 0 0;
+}
+.wrap-card:after {
+  bottom: 0;
+  left: 0;
+  -webkit-transform-origin: 100% 0;
+}
+.wrap-card:hover {
+  box-shadow: 20px 20px 0px #C91480;
+  -webkit-transform: translateY(-10px) translateX(-10px);
+  transition: all 0.2s ease 0.4s;
+}
+.wrap-card:hover:after,
+.wrap-card:hover:before {
+  -webkit-transform: scaleX(1);
 }
 
+.card h2 {
+	font-size: 18px;
+	letter-spacing: 2pt;
+}
+
+a.genre {
+	color: #C91480;
+	font-family: 'poppins';
+}
+
+.card#hip-hop {
+	background-image: url(../img/hiphop.jpg);
+}
+
+.card#hip-hop:hover {
+	opacity: .7;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+	
+}
+
+.card#pop {
+	background-image: url(../img/pop.jpg);
+}
+.card#country {
+	background-image: url(../img/country.jpg);
+}
+.card#rock {
+	background-image: url(../img/rock.jpg);
+}
+.card {
+  padding: 30px 35px 45px 35px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(129, 129, 129, 0.1);
+  height:300px;
+	width: 200px;	
+}
+.card:before,
+.card:after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  height: 100%;
+  background: #C91480;
+  -webkit-transform: scaleY(0);
+  transition: all 0.2s ease 0.2s;
+}
+.card:before {
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 0 100%;
+}
+
+.card h2 :before{
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 0 100%;
+	color: white;
+}
+
+.card h2 :after{
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: 0 0;
+	color: #C91480;
+}
+
+.card:after {
+  top: 0;
+  right: 0;
+  -webkit-transform-origin: 0 0;
+}
+.card:hover:after,
+.card:hover:before {
+  -webkit-transform: scaleY(1);
+}
 
 
 footer {
-	border-radius: 2pt;
+	margin-top: 50px;
 	color: #C91480;
 	text-align: center;
 	font-family: "montserrat";
@@ -324,12 +427,15 @@ span {
 .btn-secondary .fa {
 	  margin-right: 5px;
 }
+
 .animate-like {
 	animation-name: likeAnimation;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	animation-duration: 0.65s;
 }
+
+
 @keyframes likeAnimation {
   0%   { transform: scale(30); }
   100% { transform: scale(1); }
